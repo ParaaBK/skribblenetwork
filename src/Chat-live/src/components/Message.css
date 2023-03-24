@@ -1,0 +1,26 @@
+.message {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+  .sent {
+    background-color: #395dff;
+    color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+    float: right;
+    border-bottom-left-radius: 9999px;
+  }
+  
+  .received {
+    background-color: #e5e5ea;
+    color: #000;
+    float: left;
+    border-bottom-right-radius: 9999px;
+  }
+  
