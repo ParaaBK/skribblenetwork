@@ -19,6 +19,7 @@ html, body, :root{
     text-align: center;
     overflow: auto;
     /* scroll-behavior: unset; */
+    overflow-x: hidden;
 }
 .container{
     width: 24em;

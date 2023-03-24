@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Chat from './components/Chat';
 import { auth } from './firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import SendMessage from "./components/SendMessage";
 
 const style = {
   appContainer: `max-w-[728px] mx-auto text-center`,
@@ -20,6 +21,9 @@ function AppChat() {
           {user ? <Chat /> : null}
         </section>
       </div>
+      {/* Send Message Compoenent */}
+      <SendMessage scroll={scroll} />
+      <span ref={scroll}></span>
     </div>
   );
 }
