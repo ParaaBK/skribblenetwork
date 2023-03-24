@@ -8,9 +8,5 @@ export default defineConfig({
     host: true,
     port: 1500,
     strictPort: true,
-    hmr: {
-      host: "localhost",
-      protocol: "wss",
-    },
   }
 })
