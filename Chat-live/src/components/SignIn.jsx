@@ -1,12 +1,12 @@
 import React from 'react'
 import GoogleButton from 'react-google-button'
-
+import './SignIn.jsx'
 import {auth} from '../firebase'
 import {GoogleAuthProvider, signInWithRedirect} from 'firebase/auth'
 
-const style = {
-    wrapper: `flex justify-center`
-}
+// const style = {
+//     wrapper: `flex justify-center`
+// }
 
 const googleSignIn = () => {
     const provider = new GoogleAuthProvider()
@@ -15,10 +15,13 @@ const googleSignIn = () => {
 
 const SignIn = () => {
   return (
-    <div className={style.wrapper}>
+    <div className='wrapper'>
         <GoogleButton onClick={googleSignIn} />
     </div>
   )
 }
+
+
+
 
 export default SignIn

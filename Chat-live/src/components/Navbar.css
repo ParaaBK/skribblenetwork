@@ -1,0 +1,19 @@
+.nav {
+    background-color: #1f2937;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+  
+   
+  }
+  
+  .heading {
+    color: #fff;
+    font-size: 1.875rem;
+    margin-right: 1em !important;
+  }
+  

@@ -3,10 +3,11 @@ import Message from './Message';
 import SendMessage from './SendMessage';
 import { db } from '../firebase';
 import { query, collection, orderBy, onSnapshot } from 'firebase/firestore';
+import './Chat.css'
 
-const style = {
-  main: `flex flex-col p-[10px]overflow-x: hidden;`,
-};
+// const style = {
+//   main: `flex flex-col p-[10px]`,
+// };
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -26,7 +27,7 @@ const Chat = () => {
 
   return (
     <>
-      <main className={style.main}>
+      <main className='main'>
         {messages &&
           messages.map((message) => (
             <Message key={message.id} message={message} />
