@@ -4,8 +4,8 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 1rem;
     padding: 0.5rem 1rem;
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
   }
   .sent {
     background-color: #395dff;
@@ -14,13 +14,16 @@
     flex-direction: row-reverse;
     text-align: end;
     float: right;
-    border-bottom-left-radius: 9999px;
+    border-bottom-left-radius: 1em;
+    overflow-wrap: anywhere;
   }
   
   .received {
     background-color: #e5e5ea;
     color: #000;
     float: left;
-    border-bottom-right-radius: 9999px;
+    border-bottom-right-radius: 1em;
+    overflow-wrap: anywhere;
+    max-width: 100%;
   }
   

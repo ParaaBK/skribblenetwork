@@ -19,7 +19,7 @@ const Message = ({ message }) => {
     <div>
       <div className={`message ${messageClass}`}>
         {/* <p className={style.name}>{message.name}</p> */}
-        <p><p className='name' >{message.name}</p> {message.text}</p>
+        <p><span className='name' >{message.name}</span> {message.text}</p>
       </div>
     </div>
   );

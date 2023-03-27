@@ -1,0 +1,102 @@
+#background::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -10;
+    background: url('./Background.png') repeat center center;
+    opacity: 0.08;
+    transform: rotate(30deg);
+}
+
+#background {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#doScroll {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.card-container{
+    width: 100%;
+    max-width: 1200px;
+    height: 21em;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-body{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 1em;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.card-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1em
+}
+.card-text{
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 25em;
+    transition:0.5s all;
+}
+.card-container:hover .card-text{
+    margin-bottom: 3em;
+}
+.card-container:focus-within .card-text{
+   
+    margin-bottom: 3em;
+}
+
+.input-container{
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    row-gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.inputs{
+    height: 3em;
+    width:75%;
+    border-radius: 1em;
+    padding-left: 1em;
+    border: 1px solid black;
+    outline:0px solid rgb(94, 147, 14);
+    
+}
+.result-con{
+    width: 90%;
+    text-align: start;
+}
+
+.buttont{
+    width: 10em;
+    border: 0;
+    border-radius: 1em;
+    height: 3em;
+    transition: all 0.5s;
+}.buttont:hover{
+    border: 1px solid black;
+    scale: 1.2;
+}

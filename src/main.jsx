@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import Joined from './App'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+      <div id="background">
+          <div id="doScroll">
+              <Joined />
+          </div>
+      </div>
   </React.StrictMode>,
 )
