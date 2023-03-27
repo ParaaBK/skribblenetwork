@@ -41,7 +41,7 @@
 html, body, :root{
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+
 }
 *{
   margin: 0;
@@ -64,7 +64,7 @@ html, body, :root{
   width: 24% !important;
   margin-left: 1em;
   margin-top: -3em;
-
+  
 }
 .Game-container{
   width: 50% !important;
